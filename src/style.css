@@ -53,7 +53,13 @@
   }
 }
 
-body {
+body, html {
   margin: 0;
+  height: 100%;
+}
+
+button{
+  @apply px-2 py-1 pointer-events-auto rounded;
+  cursor: pointer;
 }
 

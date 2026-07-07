@@ -8,29 +8,53 @@
   <title>m-social</title>
 </head>
 
-<body>
+<body class="bg-gray-200">
 
-  <header class="flex p-5">
-    <h3 class="mr-auto text-4xl">Moringa Social</h3>
+  <header class="flex px-5 py-3 w-full sticky top-0 bg-blue-200">
+    <h3 class="mr-auto text-2xl">Moringa Social</h3>
     <ul class="columns-2">
       <li>Sign</li>
       <li>Register</li>
     </ul>
   </header>
 
-  <main class="flex flex-col items-center">
-    <div class="rounded shadow max-w-2xl">
-      <img src="bicyle.jpg" class="width-full">
-      <div class="p-3 flex gap-5 justify-content">
-        <span class="mr-auto">njmwas</span>
-        <button class="bg-blue-400 text-white p-3 rounded">
-          <i class="bi bi-hand-thumbs-up"></i> Likes 300</button>
-        <button>Comments 4k</button>
+  <main class="flex flex-col items-center gap-5 py-3">
+    <div class="rounded-lg shadow max-w-md bg-white">
+      <div class="flex items-center px-3 py-2 gap-3">
+        <i class="bi bi-person-circle text-4xl"></i>
+        <div>
+          <span>njmwas</span><br />
+          <small class="text-sm">CEO Skillful Technologies</small>
+        </div>
       </div>
-      <div class="comments">
-        <p>lksdjflskdjflskdjf</p>
+      <p class="p-2">This is my first auto mobile, the black mamber</p>
+      <img src="bicyle.jpg" class="width-full">
+      <div class="p-2 flex gap-5 justify-content items-center border-t border-gray-300">
+        <button class="hover:bg-blue-600 hover:text-white">
+          <i class="bi bi-hand-thumbs-up"></i> 300</button>
+        <button class="hover:bg-gray-300">
+          <i class="bi bi-chat-right-text"></i> 4k</button>
+      </div>
+      <div class="comments px-3 flex flex-col gap-3 mb-3">
+        <div class="py-1 flex gap-3 text-sm">
+          <i class="bi bi-person-circle text-3xl"></i>
+          <div>
+            <strong>Commenter Username</strong>
+            <p>This is very touching, it must have been very expensive</p>
+          </div>
+        </div>
+
+        <div class="py-1 flex gap-3 text-sm">
+          <i class="bi bi-person-circle text-3xl"></i>
+          <div>
+            <strong>Commenter 2</strong>
+            <p>How many millage does it have, are you selling</p>
+          </div>
+        </div>
+
       </div>
     </div>
+    
   </main>
 
   <script type="module" src="/src/main.js"></script>
