@@ -8,4 +8,16 @@ import './style.css'
  * called the DOM(Document Object Model)
  */
 
-window
+// if document is an object, what does it give us as devs
+document
+
+// Difference between querySelector and querySelectorAll
+// Node
+const header = document.createElement("header");
+header.innerText = "Moringa Social";
+
+const app = document.querySelector("#app");
+app.appendChild(header);
+
+
+console.log(header);
