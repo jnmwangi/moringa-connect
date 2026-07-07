@@ -13,7 +13,7 @@ document
 
 // Difference between querySelector and querySelectorAll
 // Node
-const header = document.createElement("header");
+/* const header = document.createElement("header");
 
 const h3 = document.createElement("h3")
 h3.innerText = "Moringa Social"
@@ -27,15 +27,24 @@ a1.innerText = "Register";
 header.append(h3, a, a1);
 
 const main = document.createElement("main")
-main.innerHTML = `<div><h6>Main</h6></div>`
+main.innerHTML = `<div><h6>Main</h6></div>` */
 
 const app = document.querySelector("#app");
-app.appendChild(header);
+app.innerHTML = `
+<header class="flex px-5 py-3 w-full sticky top-0 bg-blue-200">
+    <h3 class="mr-auto text-2xl">Moringa Social</h3>
+    <ul class="columns-2">
+      <li>Sign</li>
+      <li>Register</li>
+    </ul>
+  </header>
+`;
+/* app.appendChild(header);
 app.appendChild(main);
 
 const aside = document.createElement("aside")
 aside.innerText = "Aside"
-app.insertBefore(aside, main)
+app.insertBefore(aside, main) */
 
 
 console.log(header);
