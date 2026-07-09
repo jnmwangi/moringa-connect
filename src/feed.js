@@ -1,5 +1,7 @@
-export function feedUIComponent(feed){
-    return `<div class="feed rounded-lg shadow max-w-md bg-white" id="${feed.id}">
+import CommentForm from "./comment-form";
+
+export function feedUIComponent(feed) {
+  return `<div class="feed rounded-lg shadow max-w-md bg-white" id="${feed.id}">
       <div class="flex items-center px-3 py-2 gap-3">
         <i class="bi bi-person-circle text-4xl"></i>
         <div>
@@ -11,12 +13,20 @@ export function feedUIComponent(feed){
       <img src="${feed.image}" class="width-full">
       <div class="p-2 flex gap-5 justify-content items-center border-t border-gray-300">
         <button data-feedid="${feed.id}" class="like-button" class="hover:bg-blue-600 hover:text-white">
-          <i class="bi bi-hand-thumbs-up"></i> 
-          <span class="num-likes">${feed.likes}</span>
+          <i class="bi bi-hand-thumbs-up border border-green-00"></i> 
+          <span class="num-likes border border-red-00">${feed.likes}</span>
         </button>
         <button class="hover:bg-gray-300">
           <i class="bi bi-chat-right-text"></i> 4k</button>
       </div>
+
+      <form action="" class="comment-form p-3 flex align-center border border-gray-400">
+        <textarea name="message" class="comment-input px-2 py-1" rows="1"></textarea>
+
+        <!--- the button is by default a submit button -->
+        <button class=""><i class="bi bi-send"></i></button>
+      </form>
+
       <div class="comments px-3 flex flex-col gap-3 mb-3">
         <div class="py-1 flex gap-3 text-sm">
           <i class="bi bi-person-circle text-3xl"></i>
